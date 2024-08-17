@@ -17,8 +17,8 @@ driver = webdriver.Chrome(options=chrome_options)
 driver.get("https://www.linkedin.com/login")
 username = driver.find_element(By.ID, "username")   
 password = driver.find_element(By.ID, "password")
-username.send_keys("eyad1509@gmail.com")  # Replace with your LinkedIn login email
-password.send_keys("Eyad12@2020")  # Replace with your LinkedIn password
+username.send_keys("email")  # Replace with your LinkedIn login email
+password.send_keys("password")  # Replace with your LinkedIn password
 password.send_keys(Keys.RETURN)
 
 # Wait for login to complete and redirect
